@@ -1,7 +1,7 @@
-import React, { Component, Fragment } from "./node_modules/react";
-import { render } from "./node_modules/react-dom";
-import request from "./node_modules/superagent";
-import debounce from "./node_modules/debounce";
+import React, { Component, Fragment } from "react";
+import { render } from "react-dom";
+import request from "superagent";
+import debounce from "debounce";
 import "./Posts.scss";
 
 class Posts extends Component {
