@@ -1,23 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from './logo-w.svg';
+import Posts from './components/posts/Posts';
+
+import './App.scss';
 
 function App() {
-  return (
+  function async(){
+    return(
+      <Posts/>
+    );
+  }
+    return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={logo} className="App-logo noUserSelect" alt="logo" />
+        <div className="btns">
+          <div className="btn undefault noUserSelect"><span>Login</span></div>
+          <div className="btn noUserSelect"><span>Sign Up</span></div>
+        </div>
+        <div className="paraph noUserSelect">
+          <p className="noUserSelect">Swipe down to see all public posts. 
+            If you are interested in seeing the 
+            private ones, you must <span>Login</span> or <span>Sign Up.</span></p>
+        </div>
       </header>
     </div>
   );

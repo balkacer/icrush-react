@@ -1,0 +1,111 @@
+.PostContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .Post{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        border-radius: 4vmin;
+        border: 0vmin solid #ff0066;
+        background: #ffffff;
+        border: 0.1vmin solid #ff0066;
+
+        .pHeader{
+            width: 100%;
+            line-height: 50%;
+            padding: 2vmin;
+            display: flex;
+        
+            .iUser{
+                border-radius: 50%;
+                height: 5vmin;
+                width: 5vmin;
+                margin-left: 0.2vmin;
+            }
+
+            .User{
+                font-size: 2vmin;
+                vertical-align: middle;
+                color: #515151;
+                margin-left: 1vmin;
+            }
+        }
+
+        .postBody{
+            padding: 2vmin;
+            color: #0a0a0a;
+            background: #ffffff;
+            text-align: justify;
+        }
+
+        .footerPost{
+            padding: 2vmin;
+            width: 100%;
+
+            .likes{
+                
+                line-height: 50%;
+
+                .iFav{
+                    color: #ff0066;
+                    float: left;
+                    margin-left: 5vmin;                    
+                    line-height: 50%;
+                }
+
+                .cl{
+                    float: left;
+                    color: #ff0066;                    
+                    line-height: 50%;
+                }
+
+                .inputComment{
+                    float: right;
+                    border-radius: 25vmin;
+                    width: 80%;
+                    padding: 2vmin;
+                    border: 0;
+                    background: #ececec;
+                    margin-bottom: 2vmin;
+                    margin-right: 5vmin;
+                    line-height: 50%;
+                }
+            }
+
+            .comments{
+                height: 30vmin;
+                overflow: scroll;
+                padding: 1vmin;
+                width: 100%;
+                margin-top: 2vmin;
+                border-radius: 2vmin;
+                overflow: -moz-scrollbars-none;            
+
+                .comment{
+                    background: rgb(255, 168, 168);
+                    border-radius: 2vmin;
+                    padding: 1vmin;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 2vmin;
+                    color: #515151;
+
+                    .postNameComment{
+                        color: brown;
+                    }
+                }
+            }
+        }
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;  /* remove scrollbar space */
+        background: transparent;  /* optional: just make scrollbar invisible */
+    }
+}
